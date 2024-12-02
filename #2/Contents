@@ -1,0 +1,67 @@
+Accordingly, you are required to develop a Movie Ticket Booking System, where you will be generating TicketBooking items and display the information that they hold. Every TicketBooking should also include the overall cost (payment due).
+You are asked to create a TicketBooking class that includes the following variables:
+movieName: Stored as a String, representing the name of the movie.
+showDate: Stored as a String, representing the date of the movie show (e.g., "2024-09-10").
+showTime: Stored as a String, representing the time of the movie show (e.g., "18:00").
+ticketPrice: Stored as an int, representing the price per ticket.
+ticketCount: Stored as an int, representing the number of tickets booked.
+seatType: Stored as an enum called SeatType with the following options: Regular, Premium, VIP.
+Your class should have a displayInfo() method, which would display the information about the TicketBooking. 
+This method should call the calculateTotalPrice() method to calculate the total amount the customer will have to pay for their booking. 
+You should create a TicketBooking object and insert all the data via its constructor. When displaying the information, all details should be collected via getter methods. 
+Your implementation must be constructed as two separate Java files.You should create few TicketBooking objects and show their information and their total cost by implementing a menu as shown below;
+1. Create new Ticket Booking
+2. Display all Ticket Bookings
+0. Exit
+PS: Please use object arrays but not ArrayLists.
+Application Walkthrough
+Movie Ticket Booking System
+1. Create new Ticket Booking
+2. Display all Ticket Bookings
+0. Exit
+Enter your choice: 1
+Enter movie name: The Godfather
+Enter show date (YYYY-MM-DD): 2024-10-25
+Enter show time (HH:MM): 18:00
+Enter ticket price: 15
+Enter number of tickets: 2
+Select seat type (Regular, Premium, VIP): Premium
+Booking created successfully!
+Movie Ticket Booking System
+1. Create new Ticket Booking
+2. Display all Ticket Bookings
+0. Exit
+Enter your choice: 1Enter movie name: Inception
+Enter show date (YYYY-MM-DD): 2024-11-01
+Enter show time (HH:MM): 12:00
+Enter ticket price: 25
+Enter number of tickets: 3
+Select seat type (Regular, Premium, VIP): VIP
+Booking created successfully!
+Movie Ticket Booking System
+1. Create new Ticket Booking
+2. Display all Ticket Bookings
+0. Exit
+Enter your choice: 2
+Ticket Booking Information:
+Movie Name: The Godfather
+Show Date: 2024-10-25
+Show Time: 18:00
+Ticket Price: $15
+Ticket Count: 2
+Seat Type: Premium
+Total Price: $30
+------------------------------
+Movie Name: Inception
+Show Date: 2024-11-01
+Show Time: 12:00
+Ticket Price: $25
+Ticket Count: 3
+Seat Type: VIPTotal Price: $75
+------------------------------
+Movie Ticket Booking System
+1. Create new Ticket Booking
+2. Display all Ticket Bookings
+0. Exit
+Enter your choice: 0
+Exiting the system. Goodbye!
