@@ -1,4 +1,4 @@
-you are expected to improve your existing Movie Ticket Booking System by incorporating inheritance hierarchy and enumerations.
+You are expected to improve your existing Movie Ticket Booking System by incorporating inheritance hierarchy and enumerations.
 You should add six new classes for different ticket types called Regular, Premium, VIP, Balcony, Box and IMAX, which all should be inherited from the Ticket class and should all be its subclass. 
 Thus, you need to initialize each subclass with its relevant ticket specifications, as provided below, using its constructor and set the instance variables. Ticket Type ticketPrice seatType
 Regular  $10  standart
