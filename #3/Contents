@@ -1,0 +1,141 @@
+you are expected to improve your existing Movie Ticket Booking System by incorporating inheritance hierarchy and enumerations.
+You should add six new classes for different ticket types called Regular, Premium, VIP, Balcony, Box and IMAX, which all should be inherited from the Ticket class and should all be its subclass. 
+Thus, you need to initialize each subclass with its relevant ticket specifications, as provided below, using its constructor and set the instance variables. Ticket Type ticketPrice seatType
+Regular  $10  standart
+Premium  $15  better
+VIP  $20  loungeAccess
+Balcony  $25  elevated
+Box  $30  privateBox
+IMAX  $35  largeFormat
+The cinema owners highlighted that December and June are their peak times and stated that they would like to charge double for these months due to holidays. 
+Accordingly, you are required to check the booking month before calculating the total price of the relevant booking and pass three variables to an overloaded calculateTotalPrice(), which includes an integer multiplier variable.
+Additionally, you are required to add a static int variable named totalNumOfBookings in your TicketBooking class, which will hold the total number of bookings. 
+In the main method, this variable must be utilized to keep track of the total number of bookings and should be incremented using the dot operator (Class.variable) every time a new reservation instance is created. 
+Then, this variable should be used to print the total number of bookings.
+You need to use Enumerations to specify the menu options by creating a new enum class called MenuOptions. 
+You should print the menu in the main method using the enum constants’ textual representations. Furthermore, you are required to check the user input for the menu by comparing the MenuOptions constants.
+When the application is started, it should prompt the user with the following menu:
+1. Create new Ticket Booking
+2. Create new Ticket Booking with Ticket Type
+3. Display all Ticket Bookings
+4. Display the total number of bookings
+5. Exit
+Option 1: Prompt the user to enter the relevant information for a new booking. The default ticket type should be RegularTicket.
+Option 2: Allow the user to specify the type of ticket they want to book (e.g., PremiumTicket, VIPTicket, etc.). The system should compare the provided ticket type using the equals() method and create an instance of the corresponding subclass.
+Option 3: Display all bookings with the details using the displayInfo() method.
+Option 4: Display the total number of bookings using the static variable totalNumOfBookings.
+Option 5: Terminate the application.
+Application Walkthrough
+Movie Ticket Booking System
+1. Create new Ticket Booking
+2. Create new Ticket Booking with Ticket Type
+3. Display all Ticket Bookings
+4. Display the total number of bookings
+5. Exit
+Enter your choice (1-5): 1
+Enter movie name: The Godfather
+Enter show date (e.g., June 10): March 15
+Enter show time (e.g., 18:00): 16:00
+Enter number of tickets: 2
+Booking created successfully!
+Movie Ticket Booking System
+1. Create new Ticket Booking
+2. Create new Ticket Booking with Ticket Type
+3. Display all Ticket Bookings
+4. Display the total number of bookings
+5. Exit
+Enter your choice (1-5): 2
+Enter ticket type (Regular, Premium, VIP, Balcony, Box, IMAX): Balcony
+Enter movie name: Inception
+Enter show date (e.g., June 10): June 20
+Enter show time (e.g., 18:00): 12:00
+Enter number of tickets: 1
+Booking created successfully!
+Movie Ticket Booking System
+1. Create new Ticket Booking
+2. Create new Ticket Booking with Ticket Type
+3. Display all Ticket Bookings
+4. Display the total number of bookings
+5. Exit
+Enter your choice (1-5): 3
+Ticket Booking Information:
+Movie Name:
+Show Date: March 15
+Show Time: 16:00
+Seat Type: standard
+Ticket Price: $10
+Total Price: $20
+------------------------------
+Movie Name: Inception
+Show Date: June 20
+Show Time: 12:00
+Seat Type: elevated
+Ticket Price: $25
+Total Price: $50
+------------------------------
+Movie Ticket Booking System
+1. Create new Ticket Booking
+2. Create new Ticket Booking with Ticket Type
+3. Display all Ticket Bookings
+4. Display the total number of bookings
+5. Exit
+Enter your choice (1-5): 4
+Total number of bookings: 2
+Movie Ticket Booking System
+1. Create new Ticket Booking
+2. Create new Ticket Booking with Ticket Type
+3. Display all Ticket Bookings
+4. Display the total number of bookings
+5. Exit
+Enter your choice (1-5): 2
+Enter ticket type (Regular, Premium, VIP, Balcony, Box, IMAX): Box
+Enter movie name: The Shining
+Enter show date (e.g., June 10): September 5
+Enter show time (e.g., 18:00): 14:00
+Enter number of tickets: 2
+Booking created successfully!
+Movie Ticket Booking System
+1. Create new Ticket Booking
+2. Create new Ticket Booking with Ticket Type
+3. Display all Ticket Bookings
+4. Display the total number of bookings
+5. Exit
+Enter your choice (1-5): 3
+Ticket Booking Information:
+Movie Name:
+Show Date: March 15
+Show Time: 16:00
+Seat Type: standard
+Ticket Price: $10
+Total Price: $20
+-----------------------------
+Movie Name: Inception
+Show Date: June 20
+Show Time: 12:00
+Seat Type: elevated
+Ticket Price: $25
+Total Price: $50
+------------------------------
+Movie Name: The Shining
+Show Date: September 5
+Show Time: 14:00
+Seat Type: privateBox
+Ticket Price: $30
+Total Price: $60
+------------------------------
+Movie Ticket Booking System
+1. Create new Ticket Booking
+2. Create new Ticket Booking with Ticket Type
+3. Display all Ticket Bookings
+4. Display the total number of bookings
+5. Exit
+Enter your choice (1-5): 4
+Total number of bookings: 3
+Movie Ticket Booking System
+1. Create new Ticket Booking
+2. Create new Ticket Booking with Ticket Type
+3. Display all Ticket Bookings
+4. Display the total number of bookings
+5. Exit
+Enter your choice (1-5): 5
+Exiting the system. Goodbye!
