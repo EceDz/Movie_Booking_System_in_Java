@@ -1,1 +1,67 @@
-
+You are required to develop a Movie Ticket Booking System. Accordingly, for this week’s assignment, you are expected to develop a system that allows users to create ticket bookings, display booking information, and calculate the total amount due for each booking.
+Accordingly, you are required to collect 5 Movie booking data that includes id, movieName, ticketPrice (per person) and ticketCount variables. All of this information should be stored in a multidimensional array.
+● id (int): A unique identifier for each booking (automatically incremented for each new booking).
+● movieName (String): The name of the movie for which the ticket is booked.
+● ticketPrice (int): The price per ticket.
+● ticketCount (int): The number of tickets booked.
+Your application should also have a displayInfo() method which should make use of the calculatePrice() method to list all movies and their overall due price. The overall price should be calculated using the ticketPrice per person and multiplying with ticketCount.
+You should create a few Movies and show their information and the total number of rooms created by implementing a menu as below;
+1. Create new Ticket Booking
+2. Display all booking information
+3. Display the total number of tickets booked
+0. Exit
+PS: You can use basic C-style arrays. You can either use multiple arrays or one multidimensional array to store the information.
+Application Walkthrough
+Movie Ticket Booking System
+1. Create new Ticket Booking
+2. Display all booking information
+3. Display the total number of tickets booked
+0. Exit
+Enter your choice: 1
+Enter movie name: The Godfather
+Enter ticket price: 5
+Enter number of tickets: 2
+Booking created successfully!
+Movie Ticket Booking System
+1. Create new Ticket Booking
+2. Display all booking information
+3. Display the total number of tickets booked
+0. Exit
+Enter your choice: 1
+Enter movie name: Fight Club
+Enter ticket price: 8
+Enter number of tickets: 3
+Booking created successfully!
+Movie Ticket Booking System
+1. Create new Ticket Booking
+2. Display all booking information
+3. Display the total number of tickets booked
+0. Exit
+Enter your choice: 2
+Booking Information:
+Booking ID: 1
+Movie Name: The Godfather
+Ticket Price: $5
+Number of Tickets: 2
+Total Price: $10
+------------------------------
+Booking ID: 2
+Movie Name: Fight Club
+Ticket Price: $8
+Number of Tickets: 3
+Total Price: $24
+------------------------------
+Movie Ticket Booking System
+1. Create new Ticket Booking
+2. Display all booking information
+3. Display the total number of tickets booked
+0. Exit
+Enter your choice: 3
+Total number of bookings made: 2
+Movie Ticket Booking System
+1. Create new Ticket Booking
+2. Display all booking information
+3. Display the total number of tickets booked
+0. Exit
+Enter your choice: 0
+Exiting the system. Goodbye!
