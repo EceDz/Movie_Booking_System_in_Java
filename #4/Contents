@@ -1,0 +1,170 @@
+You are expected to improve your existing Movie Ticket Booking by incorporating ArrayList type data structures from the package Collections. 
+Furthermore, you are required to make use of the remove() method to delete items from an ArrayList.
+1. Create new Ticket Booking
+2. Create new Ticket Booking with Ticket Type
+3. Display all Ticket Bookings
+4. Display the total number of bookings
+5. List the bookings for a specific cinema
+6. Remove bookings in a specific cinema
+7. Exit
+As part of this assignment, you need to add two new menu items to your existing reservation system. 
+Namely; item 5 “List the bookings for a specific cinema” and item 6 “Remove bookings in a specific cinema”. 
+You should set the size of your Booking array to 3 and always fill all of them with data – the size of the array should be 3 and you should always enter at least 3 bookings.
+When the user selects the 5th option, the system should ask the user to input the name of the cinema that the user would like to list the bookings of.
+Next, even though it is possible to parse the Bookings array using do/while loop, the application should convert the Bookings array into a List and traverse it using List Iterator’s hasNext() method.
+If the Iterator’s pointer indicates a booking cinema which has the name provided initially, it should print those booking details on the screen.
+When the user selects the 6th option, the application initially should request the user to input a cinema name. 
+As soon as the city name is provided, it should convert the existing Bookings array into a List and parse the cinema names to check whether any of the reservations are made for that specific cinema. 
+If any found, it should remove that booking from the list using List’s remove() method. Then the existing Bookings array should be set to null and the resulting List should then be inserted to the Bookings array.
+Application Walkthrough
+Movie Ticket Booking System
+1. Create new Ticket Booking
+2. Create new Ticket Booking with Ticket Type
+3. Display all Ticket Bookings
+4. Display the total number of bookings
+5. List the bookings for a specific cinema
+6. Remove bookings in a specific cinema
+7. Exit
+Enter your choice: 1
+Enter movie name: The Godfather
+Enter cinema name: Cinemaximum Budak
+Enter show date (e.g., June 10): November 23
+Enter show time (e.g., 18:00): 16:00
+Enter number of tickets: 3
+Booking created successfully!
+Movie Ticket Booking System
+1. Create new Ticket Booking
+2. Create new Ticket Booking with Ticket Type
+3. Display all Ticket Bookings
+4. Display the total number of bookings
+5. List the bookings for a specific cinema
+6. Remove bookings in a specific cinema
+7. Exit
+Enter your choice: 2
+Enter ticket type (Regular, Premium, VIP, IMAX): Premium
+Enter movie name: Venom
+Enter cinema name: Cinemaximum Budak
+Enter show date (e.g., June 10): November 24
+Enter show time (e.g., 18:00): 20:00
+Enter number of tickets: 2
+Booking created successfully!
+Movie Ticket Booking System
+1. Create new Ticket Booking
+2. Create new Ticket Booking with Ticket Type
+3. Display all Ticket Bookings
+4. Display the total number of bookings
+5. List the bookings for a specific cinema
+6. Remove bookings in a specific cinema
+7. ExitEnter your choice: 5
+Enter cinema name: Cinemaximum Budak
+Movie Name: The Godfather
+Cinema: Cinemaximum Budak
+Show Date: November 23
+Show Time: 16:00
+Seat Type: standard
+Ticket Price: $10
+Total Price: $30
+------------------------------
+Movie Name:
+Cinema: Cinemaximum Budak
+Show Date: November 24
+Show Time: 20:00
+Seat Type: better
+Ticket Price: $15
+Total Price: $30
+------------------------------
+Movie Ticket Booking System
+1. Create new Ticket Booking
+2. Create new Ticket Booking with Ticket Type
+3. Display all Ticket Bookings
+4. Display the total number of bookings
+5. List the bookings for a specific cinema
+6. Remove bookings in a specific cinema
+7. Exit
+Enter your choice: 1
+Enter movie name: Interstellar
+Enter cinema name: Cineverse Ankara
+Enter show date (e.g., June 10): November 24
+Enter show time (e.g., 18:00): 13:00
+Enter number of tickets: 5
+Booking created successfully!
+Movie Ticket Booking System
+1. Create new Ticket Booking
+2. Create new Ticket Booking with Ticket Type
+3. Display all Ticket Bookings
+4. Display the total number of bookings
+5. List the bookings for a specific cinema
+6. Remove bookings in a specific cinema
+7. Exit
+Enter your choice: 4
+Total number of bookings: 3
+Movie Ticket Booking System
+1. Create new Ticket Booking
+2. Create new Ticket Booking with Ticket Type
+3. Display all Ticket Bookings4. Display the total number of bookings
+5. List the bookings for a specific cinema
+6. Remove bookings in a specific cinema
+7. Exit
+Enter your choice: 5
+Enter cinema name: Cineverse Bursa
+No bookings found for Cineverse Bursa
+Movie Ticket Booking System
+1. Create new Ticket Booking
+2. Create new Ticket Booking with Ticket Type
+3. Display all Ticket Bookings
+4. Display the total number of bookings
+5. List the bookings for a specific cinema
+6. Remove bookings in a specific cinema
+7. Exit
+Enter your choice: 5
+Enter cinema name: Cineverse Ankara
+Movie Name: Interstellar
+Cinema: Cineverse Ankara
+Show Date: November 24
+Show Time: 13:00
+Seat Type: standard
+Ticket Price: $10
+Total Price: $50
+------------------------------
+Movie Ticket Booking System
+1. Create new Ticket Booking
+2. Create new Ticket Booking with Ticket Type
+3. Display all Ticket Bookings
+4. Display the total number of bookings
+5. List the bookings for a specific cinema
+6. Remove bookings in a specific cinema
+7. Exit
+Enter your choice: 6
+Enter cinema name: Cineverse Ankara
+Bookings for Cineverse Ankara removed.
+Movie Ticket Booking System
+1. Create new Ticket Booking
+2. Create new Ticket Booking with Ticket Type
+3. Display all Ticket Bookings
+4. Display the total number of bookings
+5. List the bookings for a specific cinema
+6. Remove bookings in a specific cinema
+7. Exit
+Enter your choice: 5
+Enter cinema name: Cineverse Ankara
+No bookings found for Cineverse Ankara
+Movie Ticket Booking System
+1. Create new Ticket Booking
+2. Create new Ticket Booking with Ticket Type
+3. Display all Ticket Bookings
+4. Display the total number of bookings
+5. List the bookings for a specific cinema
+6. Remove bookings in a specific cinema
+7. Exit
+Enter your choice: 4
+Total number of bookings: 2
+Movie Ticket Booking System
+1. Create new Ticket Booking
+2. Create new Ticket Booking with Ticket Type
+3. Display all Ticket Bookings
+4. Display the total number of bookings
+5. List the bookings for a specific cinema
+6. Remove bookings in a specific cinema
+7. Exit
+Enter your choice: 7
+Exiting the system. Goodbye!
