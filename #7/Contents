@@ -1,1 +1,24 @@
-
+You are expected to enhance your Movie Ticket Booking System by incorporating a graphical user interface (GUI).
+This system should allow users to manage customers, create ticket bookings, and view information through an interactive interface built with Java Swing. 
+The GUI should include buttons, dialog boxes, and text areas to provide a user-friendly experience.
+As you can see, there is a title for the application. Furthermore, there exits four JButtons for the following actions:
+● Add Customer: Adds a customer to the system.
+● Create Booking: Creates a Movie Booking for a Customer.
+● Display All Customers: Displays the Customers that have been created thus far.
+● Display All Bookings: Displays the Bookings that have been created thus far.
+The Add Customer button should open a dialog that allows the user to:
+● Select the customer type: Regular Customer, Loyalty Member, or Corporate Client.
+● Enter the customer's name and email.
+● The newly created customer should be stored in the system and displayed in subsequent views.
+The Create Booking button should open a dialog that allows the user to:
+● Enter the customer ID.
+● Input details such as movie name, cinema name, show date, show time, and the number of tickets.
+● Select the ticket type: Regular, Premium, VIP, or IMAX.
+The booking should calculate the total cost and apply the customer's discount based on their type.
+The Display All Customers button should open a dialog:
+● Displaying all customers with their details, including name, email, and customer type.
+The Display All Bookings button should open a dialog:
+● Displaying all bookings, including movie name, cinema name, show date, show time, ticket count, and total cost.
+Furthermore, you are required to ensure that error messages are displayed in dialogs for invalid inputs, such as:
+● Invalid customer ID.
+● Non-numeric values for ticket count.
