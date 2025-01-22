@@ -1,1 +1,259 @@
-
+You are required to enhance the Movie Ticket Booking System by adding exceptions. You must implement the following custom exceptions:
+● InvalidCustomerException: This exception is thrown when a provided customer ID does not exist in the system.
+● InvalidTicketTypeException: This exception is thrown when an invalid ticket type is entered during booking creation.
+Furthermore, you are also required to implement sorting mechanisms using Comparator and Comparable interfaces such that:
+● Customers: Use the Comparator interface to sort customers alphabetically by name.
+● Bookings: Use the Comparable interface to sort bookings by their total (original a.k.a without discounts) cost.
+Thus, the system menu should now include the following options:
+1. Add Customer
+2. Create new Ticket Booking
+3. Create new Ticket Booking with Ticket Type
+4. Display all Ticket Bookings
+5. Display the total number of bookings
+6. List the bookings for a specific cinema
+7. Remove bookings in a specific cinema
+8. Display all Customers
+9. Sort Customers by Name
+10. Sort Bookings by Total Cost
+Application Walkthrough
+Movie Ticket Booking System
+1. Add Customer
+2. Create new Ticket Booking
+3. Create new Ticket Booking with Ticket Type
+4. Display all Ticket Bookings
+5. Display the total number of bookings
+6. List the bookings for a specific cinema
+7. Remove bookings in a specific cinema
+8. Display all Customers
+9. Sort Customers by Name
+10. Sort Bookings by Total Cost
+11. Exit
+Enter your choice: 1
+Select Customer Type:
+1. Regular Customer
+2. Loyalty Member
+3. Corporate Client
+Enter your choice: 1
+Enter name: Alice
+Enter email: alice@outlook.com
+Customer added successfully!
+Movie Ticket Booking System
+1. Add Customer
+2. Create new Ticket Booking
+3. Create new Ticket Booking with Ticket Type
+4. Display all Ticket Bookings
+5. Display the total number of bookings
+6. List the bookings for a specific cinema
+7. Remove bookings in a specific cinema
+8. Display all Customers
+9. Sort Customers by Name
+10. Sort Bookings by Total Cost
+11. Exit
+Enter your choice: 1
+Select Customer Type:
+1. Regular Customer
+2. Loyalty Member
+3. Corporate Client
+Enter your choice: 3
+Enter name: Yeditepe
+Enter email: yeditepe@gmail.com
+Customer added successfully!
+Movie Ticket Booking System
+1. Add Customer
+2. Create new Ticket Booking
+3. Create new Ticket Booking with Ticket Type
+4. Display all Ticket Bookings
+5. Display the total number of bookings
+6. List the bookings for a specific cinema
+7. Remove bookings in a specific cinema
+8. Display all Customers
+9. Sort Customers by Name
+10. Sort Bookings by Total Cost
+11. Exit
+Enter your choice: 1
+Select Customer Type:
+1. Regular Customer
+2. Loyalty Member
+3. Corporate Client
+Enter your choice: 2
+Enter name: Bob
+Enter email: bob@hotmail.com
+Customer added successfully!
+Movie Ticket Booking System
+1. Add Customer
+2. Create new Ticket Booking
+3. Create new Ticket Booking with Ticket Type
+4. Display all Ticket Bookings
+5. Display the total number of bookings
+6. List the bookings for a specific cinema
+7. Remove bookings in a specific cinema
+8. Display all Customers
+9. Sort Customers by Name
+10. Sort Bookings by Total Cost
+11. Exit
+Enter your choice: 9
+Customers sorted by name:
+Customer Information:
+Customer ID: 1
+Name: Alice
+Email: alice@outlook.com
+Type: Regular Customer
+Customer ID: 3
+Name: Bob
+Email: bob@hotmail.com
+Type: Loyalty Member
+Customer ID: 2
+Name: Yeditepe
+Email: yeditepe@gmail.com
+Type: Corporate Client
+Movie Ticket Booking System
+1. Add Customer
+2. Create new Ticket Booking
+3. Create new Ticket Booking with Ticket Type
+4. Display all Ticket Bookings
+5. Display the total number of bookings
+6. List the bookings for a specific cinema
+7. Remove bookings in a specific cinema
+8. Display all Customers
+9. Sort Customers by Name
+10. Sort Bookings by Total Cost
+11. Exit
+Enter your choice: 2
+Enter customer ID: 1
+Enter movie name: Goodfellas
+Enter cinema name: Cineverse Kadikoy
+Enter show date (e.g., June 10): May 20
+Enter show time (e.g., 18:00): 20:00
+Enter number of tickets: 3
+Booking created successfully!
+Original Cost: $30.0
+Discounted Cost: $30.0
+Movie Ticket Booking System
+1. Add Customer
+2. Create new Ticket Booking
+3. Create new Ticket Booking with Ticket Type
+4. Display all Ticket Bookings
+5. Display the total number of bookings
+6. List the bookings for a specific cinema
+7. Remove bookings in a specific cinema
+8. Display all Customers
+9. Sort Customers by Name
+10. Sort Bookings by Total Cost
+11. Exit
+Enter your choice: 2
+Enter customer ID: 3
+Enter movie name: Inception
+Enter cinema name: Paribu Istanbul
+Enter show date (e.g., June 10): April 15
+Enter show time (e.g., 18:00): 11:00
+Enter number of tickets: 5
+Booking created successfully!
+Original Cost: $50.0
+Discounted Cost: $45.0
+Movie Ticket Booking System
+1. Add Customer
+2. Create new Ticket Booking
+3. Create new Ticket Booking with Ticket Type
+4. Display all Ticket Bookings
+5. Display the total number of bookings
+6. List the bookings for a specific cinema
+7. Remove bookings in a specific cinema
+8. Display all Customers
+9. Sort Customers by Name
+10. Sort Bookings by Total Cost
+11. Exit
+Enter your choice: 2
+Enter customer ID: 1
+Enter movie name: Inception
+Enter cinema name: Paribu Istanbul
+Enter show date (e.g., June 10): April 15
+Enter show time (e.g., 18:00): 11:00
+Enter number of tickets: 2
+Booking created successfully!
+Original Cost: $20.0
+Discounted Cost: $20.0
+Movie Ticket Booking System
+1. Add Customer
+2. Create new Ticket Booking
+3. Create new Ticket Booking with Ticket Type
+4. Display all Ticket Bookings
+5. Display the total number of bookings
+6. List the bookings for a specific cinema
+7. Remove bookings in a specific cinema
+8. Display all Customers
+9. Sort Customers by Name
+10. Sort Bookings by Total Cost
+11. Exit
+Enter your choice: 10
+Bookings sorted by total cost:
+Ticket Booking Information:
+Movie Name: Inception
+Cinema: Paribu Istanbul
+Show Date: April 15
+Show Time: 11:00
+Seat Type: standard
+Ticket Price: $10
+Total Price: $20
+------------------------------
+Movie Name: Goodfellas
+Cinema: Cineverse Kadikoy
+Show Date: May 20
+Show Time: 20:00
+Seat Type: standard
+Ticket Price: $10
+Total Price: $30
+------------------------------
+Movie Name: Inception
+Cinema: Paribu Istanbul
+Show Date: April 15
+Show Time: 11:00
+Seat Type: standard
+Ticket Price: $10
+Total Price: $50
+------------------------------
+Movie Ticket Booking System
+1. Add Customer
+2. Create new Ticket Booking
+3. Create new Ticket Booking with Ticket Type
+4. Display all Ticket Bookings
+5. Display the total number of bookings
+6. List the bookings for a specific cinema
+7. Remove bookings in a specific cinema
+8. Display all Customers
+9. Sort Customers by Name
+10. Sort Bookings by Total Cost
+11. Exit
+Enter your choice: 3
+Enter ticket type (Regular, Premium, VIP, IMAX): Gold
+Error: Invalid ticket type: Gold
+Movie Ticket Booking System
+1. Add Customer
+2. Create new Ticket Booking
+3. Create new Ticket Booking with Ticket Type
+4. Display all Ticket Bookings
+5. Display the total number of bookings
+6. List the bookings for a specific cinema
+7. Remove bookings in a specific cinema
+8. Display all Customers
+9. Sort Customers by Name
+10. Sort Bookings by Total Cost
+11. Exit
+Enter your choice: 2
+Enter customer ID: 10
+Error: Customer ID not found: 10
+Movie Ticket Booking System
+1. Add Customer
+2. Create new Ticket Booking
+3. Create new Ticket Booking with Ticket Type
+4. Display all Ticket Bookings
+5. Display the total number of bookings
+6. List the bookings for a specific cinema
+7. Remove bookings in a specific cinema
+8. Display all Customers
+9. Sort Customers by Name
+10. Sort Bookings by Total Cost
+11. Exit
+Enter your choice: 3
+Enter ticket type (Regular, Premium, VIP, IMAX): Premium
+Enter customer ID: 999
+Error: Customer ID not found: 999
