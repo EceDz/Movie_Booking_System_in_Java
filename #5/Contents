@@ -1,1 +1,208 @@
-
+You are required to enhance the Movie Ticket Booking System by integrating customer types and applying polymorphism. 
+Customers will now be classified into three types, each with unique pricing behaviors:
+● RegularCustomer: Standard customers with no discounts.
+● LoyaltyMember: Customers who receive a 10% discount on all bookings.
+● CorporateClient: Customers who receive a 15% discount for bulk orders (total cost above $500).
+You are required to create an interface Customer with the following methods:
+● int getCustomerId(): Returns the customer ID.
+● String getName(): Returns the customer's name.
+● String getEmail(): Returns the customer's email.
+● double calculateDiscountedPrice(double totalCost): Calculates the discounted price based on the customer type.
+● void displayInfo(): Displays customer information.
+For this purpose, you should maintain a list of all customers in the system which in turn will allow users to add new customers 
+and view a list of all customers. You already maintain a list of all bookings, you should now associate a booking with a specific customer by customerId.
+You should use existing functionality to create and manage bookings. Calculate and display the original and discounted costs for each booking.
+The discounted prices should be calculated dynamically using the calculateDiscountedPrice method in the Customer interface.
+When the application is started, it should prompt the user with the following menu:
+Movie Ticket Booking System
+1. Add Customer
+2. Create new Ticket Booking
+3. Create new Ticket Booking with Ticket Type
+4. Display all Ticket Bookings
+5. Display the total number of bookings
+6. List the bookings for a specific cinema
+7. Remove bookings in a specific cinema
+8. Display all Customers
+9. Exit
+Option 1: Add a new customer to the system.
+Option 2: Create a new ticket booking associated with a specific customer (default ticket type: RegularTicket).
+Option 3: Create a new ticket booking with a user-specified ticket type.
+Option 4: Display all existing ticket bookings with details.
+Option 5: Display the total number of bookings made so far.
+Option 6: List all bookings for a specific cinema.
+Option 7: Remove all bookings for a specific cinema.
+Option 8: Display all customers and their information.
+Option 9: Exit the application.
+When the user selects the 7th option, the application should exit.
+Application Walkthrough
+Movie Ticket Booking System
+1. Add Customer
+2. Create new Ticket Booking
+3. Create new Ticket Booking with Ticket Type
+4. Display all Ticket Bookings
+5. Display the total number of bookings
+6. List the bookings for a specific cinema
+7. Remove bookings in a specific cinema
+8. Display all Customers
+9. Exit
+Enter your choice: 1
+Select Customer Type:
+1. Regular Customer
+2. Loyalty Member
+3. Corporate Client
+Enter your choice: 1
+Enter name: Alice
+Enter email: alice@gmail.com
+Customer added successfully!
+Movie Ticket Booking System
+1. Add Customer
+2. Create new Ticket Booking
+3. Create new Ticket Booking with Ticket Type
+4. Display all Ticket Bookings
+5. Display the total number of bookings
+6. List the bookings for a specific cinema
+7. Remove bookings in a specific cinema
+8. Display all Customers
+9. Exit
+Enter your choice: 1
+Select Customer Type:
+1. Regular Customer
+2. Loyalty Member
+3. Corporate Client
+Enter your choice: 2
+Enter name: Bob
+Enter email: bob@hotmail.com
+Customer added successfully!
+Movie Ticket Booking System
+1. Add Customer
+2. Create new Ticket Booking
+3. Create new Ticket Booking with Ticket Type
+4. Display all Ticket Bookings
+5. Display the total number of bookings
+6. List the bookings for a specific cinema
+7. Remove bookings in a specific cinema
+8. Display all Customers
+9. Exit
+Enter your choice: 1
+Select Customer Type:
+1. Regular Customer
+2. Loyalty Member
+3. Corporate Client
+Enter your choice: 3
+Enter name: Yeditepe
+Enter email: yeditepe@gmail.com
+Customer added successfully!
+Movie Ticket Booking System
+1. Add Customer
+2. Create new Ticket Booking
+3. Create new Ticket Booking with Ticket Type
+4. Display all Ticket Bookings
+5. Display the total number of bookings
+6. List the bookings for a specific cinema
+7. Remove bookings in a specific cinema
+8. Display all Customers
+9. Exit
+Enter your choice: 2
+Enter customer ID: 1
+Enter movie name: Interstellar
+Enter cinema name: Cineverse Kadikoy
+Enter show date (e.g., June 10): December 10
+Enter show time (e.g., 18:00): 14:00
+Enter number of tickets: 2
+Booking created successfully!
+Original Cost: $20.0
+Discounted Cost: $20.0
+Movie Ticket Booking System
+1. Add Customer
+2. Create new Ticket Booking
+3. Create new Ticket Booking with Ticket Type
+4. Display all Ticket Bookings
+5. Display the total number of bookings
+6. List the bookings for a specific cinema
+7. Remove bookings in a specific cinema
+8. Display all Customers
+9. Exit
+Enter your choice: 2
+Enter customer ID: 2
+Enter movie name: Inception
+Enter cinema name: Cineverse Bursa
+Enter show date (e.g., June 10): December 20
+Enter show time (e.g., 18:00): 15:00
+Enter number of tickets: 3
+Booking created successfully!
+Original Cost: $30.0
+Discounted Cost: $27.0
+Movie Ticket Booking System
+1. Add Customer
+2. Create new Ticket Booking
+3. Create new Ticket Booking with Ticket Type
+4. Display all Ticket Bookings
+5. Display the total number of bookings
+6. List the bookings for a specific cinema
+7. Remove bookings in a specific cinema
+8. Display all Customers
+9. Exit
+Enter your choice: 2
+Enter customer ID: 3
+Enter movie name: Her
+Enter cinema name: Cinemaximum Ankara
+Enter show date (e.g., June 10): December 15
+Enter show time (e.g., 18:00): 11:00
+Enter number of tickets: 60
+Booking created successfully!
+Original Cost: $600.0
+Discounted Cost: $510.0
+Movie Ticket Booking System
+1. Add Customer
+2. Create new Ticket Booking
+3. Create new Ticket Booking with Ticket Type
+4. Display all Ticket Bookings
+5. Display the total number of bookings
+6. List the bookings for a specific cinema
+7. Remove bookings in a specific cinema
+8. Display all Customers
+9. Exit
+Enter your choice: 3
+Enter ticket type (Regular, Premium, VIP, IMAX): IMAX
+Enter customer ID: 2
+Enter movie name: Goodfellas
+Enter cinema name: Cineverse Istanbul
+Enter show date (e.g., June 10): December 12
+Enter show time (e.g., 18:00): 20:45
+Enter number of tickets: 5
+Booking created successfully!
+Original Cost: $175.0
+Discounted Cost: $157.5
+Movie Ticket Booking System
+1. Add Customer
+2. Create new Ticket Booking
+3. Create new Ticket Booking with Ticket Type
+4. Display all Ticket Bookings
+5. Display the total number of bookings
+6. List the bookings for a specific cinema
+7. Remove bookings in a specific cinema
+8. Display all Customers
+9. Exit
+Enter your choice: 3
+Enter ticket type (Regular, Premium, VIP, IMAX): Premium
+Enter customer ID: 3
+Enter movie name: Tenet
+Enter cinema name: Cineplex Istanbul
+Enter show date (e.g., June 10): December 13
+Enter show time (e.g., 18:00): 21:00
+Enter number of tickets: 65
+Booking created successfully!
+Original Cost: $975.0
+Discounted Cost: $828.75
+Movie Ticket Booking System
+1. Add Customer
+2. Create new Ticket Booking
+3. Create new Ticket Booking with Ticket Type
+4. Display all Ticket Bookings
+5. Display the total number of bookings
+6. List the bookings for a specific cinema
+7. Remove bookings in a specific cinema
+8. Display all Customers
+9. Exit
+Enter your choice: 9
+Exiting the system. Goodbye!
